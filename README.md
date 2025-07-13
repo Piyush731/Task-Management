@@ -39,14 +39,14 @@ A **role-based Task Management System** built using **Java Spring Boot** and **M
 
 ## 📁 Project Structure
 
-src/
-├── controller # API endpoints
-├── entity # JPA entities
-├── repository # Data access layer
-├── service # Business logic
-├── dto # Data Transfer Objects
-├── config # Security and JWT config
-└── exception # Global exception handling
+src/<br>
+├── controller # API endpoints<br>
+├── entity # JPA entities<br>
+├── repository # Data access layer<br>
+├── service # Business logic<br>
+├── dto # Data Transfer Objects<br>
+├── config # Security and JWT config<br>
+└── exception # Global exception handling<br>
 
 ---
 
@@ -84,55 +84,56 @@ src/
 
 ## 🧪 API Usage Examples
 
-### 🔐 Register a User
+### 🔐 Register a User <br>
 
-**POST** `/api/auth/register`
-{
-  "username": "johndoe",
-  "password": "123456",
-  "role": "USER"
-}
-🔐 Login
-POST /api/auth/login
-{
-  "username": "johndoe",
-  "password": "123456"
-}
-➡️ Response:
-{
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
-}
-Use the token in headers as:
-Authorization: Bearer <your_token_here>
-✅ Create a Task
-POST /api/tasks
-{
-  "title": "Deploy app to production",
-  "description": "Use Render or Railway to deploy backend",
-  "status": "PENDING"
-}
-✅ Get All Tasks
-GET /api/tasks
+**POST** `/api/auth/register`<br>
+{<br>
+  "username": "johndoe",<br>
+  "password": "123456",<br>
+  "role": "USER"<br>
+}<br>
+🔐 Login<br>
+POST /api/auth/login<br>
+{<br>
+  "username": "johndoe",<br>
+  "password": "123456"<br>
+}<br>
+➡️ Response:<br>
+{<br>
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."<br>
+}<br>
+Use the token in headers as:<br>
+Authorization: Bearer <your_token_here><br>
+✅ Create a Task<br>
+POST /api/tasks<br>
+{<br>
+  "title": "Deploy app to production",<br>
+  "description": "Use Render or Railway to deploy backend",<br>
+  "status": "PENDING"<br>
+}<br>
+✅ Get All Tasks<br>
+GET /api/tasks<br>
 
-Returns all tasks based on user’s role.
+Returns all tasks based on user’s role.<br>
 
-⚙️ Setup Instructions
-1. Clone the Repository
-git clone https://github.com/Piyush731/Task-Management.git
-cd Task-Management
-2. Configure MySQL
-Create a MySQL database (e.g., taskdb) and update application.properties:
+---
+## ⚙️ Setup Instructions
 
-properties
-spring.datasource.url=jdbc:mysql://localhost:3306/taskdb
-spring.datasource.username=yourUsername
-spring.datasource.password=yourPassword
-3. Run the Application
-Using Maven:
-./mvnw spring-boot:run
-Or using Eclipse:
-Right-click the project → Run As → Spring Boot App
+1. Clone the Repository<br>
+git clone https://github.com/Piyush731/Task-Management.git<br>
+cd Task-Management<br>
+2. Configure MySQL<br>
+Create a MySQL database (e.g., taskdb) and update application.properties:<br>
+spring.datasource.url=jdbc:mysql://localhost:3306/taskdb<br>
+spring.datasource.username=yourUsername<br>
+spring.datasource.password=yourPassword<br>
+3. Run the Application<br>
+Using Maven:<br>
+./mvnw spring-boot:run<br>
+Or using Eclipse:<br>
+Right-click the project → Run As → Spring Boot App<br>
 
-📬 Contact
-Name: Piyush Kashyap
-📧 Email: piyushkashyap3247@gmail.com
+---
+## 📬 Contact
+Name: Piyush Kashyap<br>
+📧 Email: piyushkashyap3247@gmail.com<br>
